@@ -5214,3 +5214,25 @@ img {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
 }
+
+/* Mobile nav: hide photo and pin logo at bottom */
+@media screen and (max-width: 991px) {
+  .menu-image-wrapper,
+  .menu-image {
+    display: none !important;
+    min-height: 0;
+  }
+
+  .nav-content {
+    padding-bottom: 24px;
+  }
+
+  .menu-logo {
+    display: block !important;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 24px;
+    max-width: 200px;
+    width: 100%;
+  }
+}

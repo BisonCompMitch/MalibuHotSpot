@@ -5214,3 +5214,61 @@ img {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
 }
+
+/* Mobile nav: hide photo and pin logo at bottom */
+@media screen and (max-width: 991px) {
+  .menu-image-wrapper,
+  .menu-image {
+    display: none !important;
+    min-height: 0;
+  }
+
+  .nav-content {
+    padding-bottom: 24px;
+  }
+
+  .menu-logo {
+    display: block !important;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 24px;
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+/* Mobile contact layout: keep CTA buttons clear of form */
+@media screen and (max-width: 991px) {
+  .three-big-buttons-grid {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .three-big-buttons-grid {
+    row-gap: 12px;
+  }
+}
+
+/* Extra spacing for contact form on small screens */
+@media screen and (max-width: 767px) {
+  .three-big-buttons-grid {
+    margin-bottom: 72px !important;
+  }
+
+  .contact-grid {
+    margin-top: 24px;
+  }
+}
+
+/* Extra-large spacing to keep bottom CTA visible on small screens */
+@media screen and (max-width: 767px) {
+  .three-big-buttons-grid {
+    margin-bottom: 120px !important;
+  }
+
+  .contact-grid {
+    margin-top: 32px;
+    padding-bottom: 24px;
+  }
+}
