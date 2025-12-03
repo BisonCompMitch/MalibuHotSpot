@@ -100,3 +100,30 @@
 }
 
 
+
+/* Center menu items in nav and dropdown */
+.menu-item {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+.menu-item-text {
+  text-align: center;
+}
+
+/* Force center menu items across all nav states */
+.nav .menu-item,
+.menu-items .menu-item,
+.menu-item {
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 8px;
+}
+.menu-item-text {
+  text-align: center !important;
+}
