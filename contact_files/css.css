@@ -104,3 +104,8 @@
 .menu-item-text {
   text-align: center !important;
 }
+
+/* Add a little more breathing room to hero paragraphs */
+.hero-section .hero-description p {
+  line-height: 1.35;
+}
